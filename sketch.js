@@ -170,7 +170,15 @@ function redCyclists(){
 }
 
 //criar função reset aqui
+function reset() {
+  gameState = play;
+  gameOver.visible = false;
+  mainCyclist.addAnimation("add animation here!");
+  
+  pinkCG.destroyEach();
 
+  distance = 0;
+}
 
 
 
