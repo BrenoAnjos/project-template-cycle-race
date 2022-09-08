@@ -121,9 +121,9 @@ function draw() {
     }
     
 }else if (gameState === END) {
-    gameOver.visible = true;
+    
     //Acrescente o código para mostrar o texto da instrução restart (reiniciar) aqui
-  
+  gameOver.visible = true;
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
@@ -138,7 +138,12 @@ function draw() {
     redCG.setVelocityXEach(0);
     redCG.setLifetimeEach(-1);
 
+
     //escreva uma condição para chamar a função reset()
+    if (keyIsDown(UP_ARROW)){
+      reset()
+    }
+    
 }
 }
 
